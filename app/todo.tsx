@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 
 async function update(id: string, isDone: boolean, refresh: any) {
-  await fetch(`https://sid-todo.vercel.app/api/todo/update`, {
+  await fetch(`/api/todo/update`, {
     method: "POST",
     body: JSON.stringify({ id, isDone }),
   });
@@ -11,7 +11,7 @@ async function update(id: string, isDone: boolean, refresh: any) {
 }
 
 async function deleteTodo(id: string, refresh: any) {
-  await fetch(`https://sid-todo.vercel.app/api/todo/delete?id=${id}`, {
+  await fetch(`/api/todo/delete?id=${id}`, {
     method: "DELETE",
   });
 
