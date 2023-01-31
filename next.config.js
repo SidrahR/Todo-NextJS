@@ -7,7 +7,7 @@ const nextConfig = {
     return [
       {
         source: "/api/:path*",
-        destination: "https://sid-todo.vercel.app/api/:path*",
+        destination: "https://json-todo-api-xi.vercel.app/api/:path*",
       },
     ];
   },
